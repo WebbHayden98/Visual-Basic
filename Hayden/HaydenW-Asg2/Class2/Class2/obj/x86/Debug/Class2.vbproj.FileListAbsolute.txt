@@ -1,0 +1,8 @@
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\bin\Debug\Class2.exe
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\bin\Debug\Class2.pdb
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\bin\Debug\Class2.xml
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\obj\x86\Debug\Class2.exampleForm.resources
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\obj\x86\Debug\Class2.Resources.resources
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\obj\x86\Debug\Class2.exe
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\obj\x86\Debug\Class2.xml
+C:\Users\LAB\Desktop\HaydenW-Asg2\Class2\Class2\obj\x86\Debug\Class2.pdb
