@@ -1,0 +1,11 @@
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\bin\Debug\HelloWorld.xml
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.HelloForm.resources
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.Resources.resources
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.exe
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.xml
+C:\Users\LAB\Desktop\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.pdb
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.exe
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.xml
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\HelloWorld\HelloWorld\obj\x86\Debug\HelloWorld.pdb

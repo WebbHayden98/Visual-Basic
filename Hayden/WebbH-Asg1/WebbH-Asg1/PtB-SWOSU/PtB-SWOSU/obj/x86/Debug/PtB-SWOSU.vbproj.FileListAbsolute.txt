@@ -1,0 +1,8 @@
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\bin\Debug\PtB-SWOSU.exe
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\bin\Debug\PtB-SWOSU.pdb
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\bin\Debug\PtB-SWOSU.xml
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\obj\x86\Debug\PtB_SWOSU.SchoolForm.resources
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\obj\x86\Debug\PtB_SWOSU.Resources.resources
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\obj\x86\Debug\PtB-SWOSU.exe
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\obj\x86\Debug\PtB-SWOSU.xml
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtB-SWOSU\PtB-SWOSU\obj\x86\Debug\PtB-SWOSU.pdb

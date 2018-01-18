@@ -1,0 +1,8 @@
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\bin\Debug\PartA-rnr.exe
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\bin\Debug\PartA-rnr.pdb
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\bin\Debug\PartA-rnr.xml
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\obj\x86\Debug\PartA_rnr.MainForm.resources
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\obj\x86\Debug\PartA_rnr.Resources.resources
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\obj\x86\Debug\PartA-rnr.exe
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\obj\x86\Debug\PartA-rnr.xml
+C:\Users\LAB\Desktop\Visual Basic\WebbH-Asg1\PtA-RnR\PartA-rnr\obj\x86\Debug\PartA-rnr.pdb
