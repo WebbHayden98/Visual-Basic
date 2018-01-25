@@ -1,0 +1,49 @@
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\bin\Debug\BookSales.exe
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\bin\Debug\BookSales.pdb
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\bin\Debug\BookSales.xml
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.bookSalesForm.resources
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.Resources.resources
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.exe
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.xml
+C:\Documents and Settings\STF250 Student\My Documents\Visual Studio 2010\Projects\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.pdb
+E:\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.exe
+E:\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.xml
+E:\BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.pdb
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.exe
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.xml
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSalesCompleted\BookSales\obj\x86\Debug\BookSales.pdb
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSalesPartial\BookSales\obj\x86\Debug\BookSales.exe
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSalesPartial\BookSales\obj\x86\Debug\BookSales.xml
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSalesPartial\BookSales\obj\x86\Debug\BookSales.pdb
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\obj\x86\Debug\BookSales.exe
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\obj\x86\Debug\BookSales.xml
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\obj\x86\Debug\BookSales.pdb
+C:\Users\mb717502\Desktop\Student Work\3A-BookSales\BookSales\obj\x86\Debug\BookSales.exe
+C:\Users\mb717502\Desktop\Student Work\3A-BookSales\BookSales\obj\x86\Debug\BookSales.xml
+C:\Users\mb717502\Desktop\Student Work\3A-BookSales\BookSales\obj\x86\Debug\BookSales.pdb
+C:\Users\MB717502\Desktop\Student Work\3A-BookSales\BookSales\bin\Debug\BookSales.exe
+C:\Users\MB717502\Desktop\Student Work\3A-BookSales\BookSales\bin\Debug\BookSales.pdb
+C:\Users\MB717502\Desktop\Student Work\3A-BookSales\BookSales\bin\Debug\BookSales.xml
+C:\Users\MB717502\Desktop\Student Work\3A-BookSales\BookSales\obj\x86\Debug\BookSales.bookSalesForm.resources
+C:\Users\MB717502\Desktop\Student Work\3A-BookSales\BookSales\obj\x86\Debug\BookSales.Resources.resources
+C:\Users\MB717502\Desktop\Student Work\3A-BookSales\BookSales\obj\x86\Debug\BookSales.vbproj.GenerateResource.Cache
+C:\Users\MB717502\Desktop\Student Work\3A-BookSales\BookSales\bin\Debug\BookSales.exe.config
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\bin\Debug\BookSales.exe.config
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\bin\Debug\BookSales.exe
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\bin\Debug\BookSales.pdb
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\bin\Debug\BookSales.xml
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\obj\x86\Debug\BookSales.bookSalesForm.resources
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\obj\x86\Debug\BookSales.Resources.resources
+C:\Classes\BASIC\VB2010\Assignments\Chapter03\3A-BookSales\BookSales\obj\x86\Debug\BookSales.vbproj.GenerateResource.Cache
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.exe.config
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.exe
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.xml
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.pdb
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.exe
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.pdb
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.xml
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.bookSalesForm.resources
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.Resources.resources
