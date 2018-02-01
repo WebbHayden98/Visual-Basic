@@ -43,9 +43,13 @@ Public Class bookSalesForm
                 PriceDecimal = Decimal.Parse(PriceTextBox.Text)
 
                 'calculate values for single sale
-
+                ExtendedPriceDecimal = QuantityInteger * PriceDecimal
+                DiscountDecimal = Decimal.Round(
+                    (ExtendedPriceDecimal * DISCOUNT_RATE_Decimal), 2)
+                DiscountedPriceDecimal = ExtendedPriceDecimal - DiscountDecimal
 
                 'display formatted single sale values
+                QuantitySumIntegar += QuantityInteger
 
 
                 'accumulate (add to ) summary values
