@@ -34,28 +34,32 @@ Public Class bookSalesForm
 
         Try
             'convert quantity to numeric
-
             QuantityInteger = Integer.Parse(QuantityTextBox.Text)
-
             Try
                 'convert price to numeric
-
                 PriceDecimal = Decimal.Parse(PriceTextBox.Text)
-
                 'calculate values for single sale
                 ExtendedPriceDecimal = QuantityInteger * PriceDecimal
-                DiscountDecimal = Decimal.Round(
-                    (ExtendedPriceDecimal * DISCOUNT_RATE_Decimal), 2)
+                DiscountDecimal = Decimal.Round((ExtendedPriceDecimal * DISCOUNT_RATE_Decimal), 2)
                 DiscountedPriceDecimal = ExtendedPriceDecimal - DiscountDecimal
 
-                'display formatted single sale values
-                QuantitySumIntegar += QuantityInteger
-
-
                 'accumulate (add to ) summary values
+                TotalNumBooksInteger += QuantityInteger
+                TotalDiscountGivenDecimal += DiscountDecimal
+                TotalNumsSalesIntegar += 1
+                AverageDiscountDecimal = TotalDiscountGivenDecimal / TotalNumsSalesIntegar
+                TotalDiscountedAmountDecimal += DiscountedPriceDecimal
 
+                'display formatted single sale values
+                ExtendedPriceLabel.Text = ExtendedPriceDecimal.ToString("C")
+                DiscountLabel.Text = DiscountDecimal.ToString("N")
+                DiscountedPriceLabel.Text = DiscountedPriceDecimal.ToString("C")
+                TotalNumBooksLabel.Text = TotalNumBooksInteger.ToString("N")
 
                 'display formatted summary values
+                TotalDiscountedAmountsLabel.Text = TotalDiscountGivenDecimal.ToString("C")
+                TotalDiscountsGivenLabel.Text = DiscountedPriceDecimal.ToString("C")
+                AverageDiscountLabel.Text = AverageDiscountDecimal.ToString("C")
 
 
             Catch exPrice As FormatException
@@ -82,7 +86,13 @@ Public Class bookSalesForm
     End Sub
 
     Private Sub ClearButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ClearButton.Click
-
+        ExtendedPriceLabel.Text = ""
+        DiscountLabel.Text = ""
+        DiscountedPriceLabel.Text = ""
+        TotalNumBooksLabel.Text = ""
+        TotalDiscountsGivenLabel.Text = ""
+        TotalDiscountedAmountsLabel.Text = ""
+        TotalNumBooksLabel.Text = ""
     End Sub
 
     Private Sub ExitButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitButton.Click

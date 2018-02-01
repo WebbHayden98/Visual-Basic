@@ -66,7 +66,7 @@ Partial Class bookSalesForm
         Me.Label1.Location = New System.Drawing.Point(280, 12)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(100, 20)
+        Me.Label1.Size = New System.Drawing.Size(146, 29)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Book Sales"
         '
@@ -78,7 +78,7 @@ Partial Class bookSalesForm
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(55, 60)
+        Me.GroupBox1.Location = New System.Drawing.Point(55, 45)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
@@ -91,7 +91,7 @@ Partial Class bookSalesForm
         Me.PriceTextBox.Location = New System.Drawing.Point(126, 127)
         Me.PriceTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.PriceTextBox.Name = "PriceTextBox"
-        Me.PriceTextBox.Size = New System.Drawing.Size(148, 24)
+        Me.PriceTextBox.Size = New System.Drawing.Size(148, 33)
         Me.PriceTextBox.TabIndex = 5
         '
         'TitleTextBox
@@ -99,7 +99,7 @@ Partial Class bookSalesForm
         Me.TitleTextBox.Location = New System.Drawing.Point(126, 79)
         Me.TitleTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.TitleTextBox.Name = "TitleTextBox"
-        Me.TitleTextBox.Size = New System.Drawing.Size(419, 24)
+        Me.TitleTextBox.Size = New System.Drawing.Size(419, 33)
         Me.TitleTextBox.TabIndex = 4
         '
         'QuantityTextBox
@@ -107,7 +107,7 @@ Partial Class bookSalesForm
         Me.QuantityTextBox.Location = New System.Drawing.Point(126, 30)
         Me.QuantityTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.QuantityTextBox.Name = "QuantityTextBox"
-        Me.QuantityTextBox.Size = New System.Drawing.Size(136, 24)
+        Me.QuantityTextBox.Size = New System.Drawing.Size(136, 33)
         Me.QuantityTextBox.TabIndex = 1
         '
         'Label4
@@ -116,7 +116,7 @@ Partial Class bookSalesForm
         Me.Label4.Location = New System.Drawing.Point(24, 133)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 18)
+        Me.Label4.Size = New System.Drawing.Size(69, 29)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "&Price"
         '
@@ -126,7 +126,7 @@ Partial Class bookSalesForm
         Me.Label3.Location = New System.Drawing.Point(24, 82)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(35, 18)
+        Me.Label3.Size = New System.Drawing.Size(61, 29)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "&Title"
         '
@@ -136,7 +136,7 @@ Partial Class bookSalesForm
         Me.Label2.Location = New System.Drawing.Point(24, 32)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 18)
+        Me.Label2.Size = New System.Drawing.Size(100, 29)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "&Quantity"
         '
@@ -148,7 +148,7 @@ Partial Class bookSalesForm
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Location = New System.Drawing.Point(55, 281)
+        Me.GroupBox2.Location = New System.Drawing.Point(55, 244)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
@@ -186,30 +186,30 @@ Partial Class bookSalesForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(186, 74)
+        Me.Label7.Location = New System.Drawing.Point(176, 79)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(100, 18)
+        Me.Label7.Size = New System.Drawing.Size(160, 29)
         Me.Label7.TabIndex = 2
         Me.Label7.Text = "15% Discount"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(186, 128)
+        Me.Label6.Location = New System.Drawing.Point(140, 130)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(121, 18)
+        Me.Label6.Size = New System.Drawing.Size(196, 29)
         Me.Label6.TabIndex = 1
         Me.Label6.Text = "Discounted Price"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(186, 22)
+        Me.Label5.Location = New System.Drawing.Point(159, 30)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(107, 18)
+        Me.Label5.Size = New System.Drawing.Size(177, 29)
         Me.Label5.TabIndex = 0
         Me.Label5.Text = "Extended Price"
         '
@@ -223,7 +223,7 @@ Partial Class bookSalesForm
         Me.GroupBox3.Controls.Add(Me.Label10)
         Me.GroupBox3.Controls.Add(Me.Label9)
         Me.GroupBox3.Controls.Add(Me.Label8)
-        Me.GroupBox3.Location = New System.Drawing.Point(55, 479)
+        Me.GroupBox3.Location = New System.Drawing.Point(55, 425)
         Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
@@ -274,7 +274,7 @@ Partial Class bookSalesForm
         Me.Label11.Location = New System.Drawing.Point(58, 160)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(124, 18)
+        Me.Label11.Size = New System.Drawing.Size(201, 29)
         Me.Label11.TabIndex = 3
         Me.Label11.Text = "Average Discount"
         '
@@ -284,7 +284,7 @@ Partial Class bookSalesForm
         Me.Label10.Location = New System.Drawing.Point(58, 110)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(183, 18)
+        Me.Label10.Size = New System.Drawing.Size(294, 29)
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Total Discounted Amounts"
         '
@@ -294,7 +294,7 @@ Partial Class bookSalesForm
         Me.Label9.Location = New System.Drawing.Point(58, 66)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(154, 18)
+        Me.Label9.Size = New System.Drawing.Size(247, 29)
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Total Discounts Given"
         '
@@ -304,13 +304,13 @@ Partial Class bookSalesForm
         Me.Label8.Location = New System.Drawing.Point(58, 22)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(163, 18)
+        Me.Label8.Size = New System.Drawing.Size(261, 29)
         Me.Label8.TabIndex = 0
         Me.Label8.Text = "Total Number of Books"
         '
         'PrintButton
         '
-        Me.PrintButton.Location = New System.Drawing.Point(31, 703)
+        Me.PrintButton.Location = New System.Drawing.Point(49, 649)
         Me.PrintButton.Margin = New System.Windows.Forms.Padding(4)
         Me.PrintButton.Name = "PrintButton"
         Me.PrintButton.Size = New System.Drawing.Size(130, 37)
@@ -320,7 +320,7 @@ Partial Class bookSalesForm
         '
         'CalculateButton
         '
-        Me.CalculateButton.Location = New System.Drawing.Point(189, 703)
+        Me.CalculateButton.Location = New System.Drawing.Point(199, 649)
         Me.CalculateButton.Margin = New System.Windows.Forms.Padding(4)
         Me.CalculateButton.Name = "CalculateButton"
         Me.CalculateButton.Size = New System.Drawing.Size(130, 37)
@@ -330,7 +330,7 @@ Partial Class bookSalesForm
         '
         'ClearButton
         '
-        Me.ClearButton.Location = New System.Drawing.Point(346, 703)
+        Me.ClearButton.Location = New System.Drawing.Point(348, 649)
         Me.ClearButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(130, 37)
@@ -340,7 +340,7 @@ Partial Class bookSalesForm
         '
         'ExitButton
         '
-        Me.ExitButton.Location = New System.Drawing.Point(504, 703)
+        Me.ExitButton.Location = New System.Drawing.Point(495, 649)
         Me.ExitButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(130, 37)
@@ -362,15 +362,15 @@ Partial Class bookSalesForm
         Me.LabelS18.Location = New System.Drawing.Point(666, 718)
         Me.LabelS18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelS18.Name = "LabelS18"
-        Me.LabelS18.Size = New System.Drawing.Size(0, 18)
+        Me.LabelS18.Size = New System.Drawing.Size(0, 29)
         Me.LabelS18.TabIndex = 8
         Me.LabelS18.Visible = False
         '
         'bookSalesForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(14.0!, 29.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(748, 745)
+        Me.ClientSize = New System.Drawing.Size(748, 693)
         Me.Controls.Add(Me.LabelS18)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)

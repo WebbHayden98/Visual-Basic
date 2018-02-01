@@ -47,3 +47,13 @@ C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.xml
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.bookSalesForm.resources
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.Resources.resources
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.exe.config
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.exe
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.xml
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.pdb
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.exe
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.pdb
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\bin\Debug\BookSales.xml
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.bookSalesForm.resources
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.Resources.resources
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment3\3A-BookSales\BookSales\obj\x86\Debug\BookSales.vbproj.GenerateResource.Cache
