@@ -1,0 +1,22 @@
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\bin\Debug\CafeOrder.exe
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\bin\Debug\CafeOrder.pdb
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\bin\Debug\CafeOrder.xml
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.BillingForm.resources
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.Resources.resources
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.exe
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.xml
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.pdb
+C:\Users\mb717502\Desktop\Student Work\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.exe
+C:\Users\mb717502\Desktop\Student Work\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.xml
+C:\Users\mb717502\Desktop\Student Work\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.pdb
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.vbproj.GenerateResource.Cache
+C:\Classes\BASIC\VB2010\Assignments\Chapter04\CafeOrder\CafeOrder\bin\Debug\CafeOrder.exe.config
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\bin\Debug\CafeOrder.exe.config
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.exe
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.xml
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.pdb
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\bin\Debug\CafeOrder.exe
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\bin\Debug\CafeOrder.pdb
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\bin\Debug\CafeOrder.xml
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.BillingForm.resources
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.Resources.resources
