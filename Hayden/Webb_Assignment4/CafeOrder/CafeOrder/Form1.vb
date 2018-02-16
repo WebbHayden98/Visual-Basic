@@ -61,10 +61,12 @@ Public Class BillingForm
                 'when necessary, calc tax
                 If taxCheckBox.Checked = True Then
                     taxDecimal = TAX_RATE_Decimal * subTotalDecimal
+                Else
+                    taxDecimal = 0
                 End If
 
                 'calc order total due
-
+                orderTotalDecimal = (subTotalDecimal + taxDecimal)
                 'enable clear for next item button and new order button
                 ClearButton.Enabled = True
                 newOrderButton.Enabled = True
@@ -73,7 +75,10 @@ Public Class BillingForm
                 taxCheckBox.Enabled = False
 
                 'display formatted output
-
+                TaxLabel.Text = taxDecimal.ToString("C")
+                itemAmountLabel.Text = itemAmountDecimal.ToString("C")
+                subTotalLabel.Text = subTotalDecimal.ToString("C")
+                OrderTotalLabel.Text = orderTotalDecimal.ToString("C")
             End If
 
             'pop up error msg
@@ -92,34 +97,75 @@ Public Class BillingForm
         itemAmountLabel.Text = ""
 
         'reset coffee type
+        itemAmountLabel.Text = ""
         CappuccinoRadioButton.Checked = True
 
     End Sub
 
     Private Sub newOrderButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles newOrderButton.Click
         'declare local variables
-        'confirm new order
-        'when confirmed
-        'call clear button
-        'clear subtotal, tax, and order due
-        'enables and uncheck takeout
-        'disable clear for next item and new order button
-        'accumulate number of orders and total sales
-        'reset subtotal and order total due for next order to 0
+        Dim messageString As String = "Clear the current order configure?"
+        Dim returnDialogResults As DialogResult
 
+        'confirm new order
+        returnDialogResults = MessageBox.Show(messageString, "Clear Order", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
+        If returnDialogResults = DialogResult.Yes Then
+
+            'when confirmed
+            'call clear button
+            ClearButton.PerformClick()
+
+            'clear subtotal, tax, and order due
+            TaxLabel.Text = ""
+            subTotalLabel.Text = ""
+            OrderTotalLabel.Text = ""
+
+            'enables and uncheck takeout
+            taxCheckBox.Enabled = True
+            taxCheckBox.Checked = False
+
+            'disable clear for next item and new order button
+            ClearButton.Enabled = False
+            newOrderButton.Enabled = False
+
+            'accumulate number of orders and total sales
+            If subTotalDecimal <> 0 Then
+                numberOfOrdersInteger += 1
+                totalSalesDecimal += orderTotalDecimal
+
+                'reset subtotal and order total due for next order to 0
+                subTotalDecimal = 0
+                orderTotalDecimal = 0
+            End If
+
+        End If
     End Sub
 
     Private Sub summaryButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles summaryButton.Click
         'declare local variables
         Dim averageSaleDecimal As Decimal
+        Dim messageString As String
 
         'ensure last order is counted
+        If totalSalesDecimal <> 0 Then
+            newOrderButton.PerformClick()
+        End If
+
         'when at least one order exist
-        'calc avg sale
-        'create summary output string
-        'pop up summary output string
-        'otherwise
-        'pop up error message
+        If numberOfOrdersInteger > 0 Then
+
+            'calc avg sale
+            averageSaleDecimal = (totalSalesDecimal / numberOfOrdersInteger)
+
+            'create summary output string
+            messageString = "number of orders: " & numberOfOrdersInteger.ToString("N") & Environment.NewLine & Environment.NewLine & averageSaleDecimal.ToString("C")
+
+            'otherwise
+        Else
+
+            'pop up error message
+            messageString = "No sales Data to summerize"
+        End If
     End Sub
 
     Private Sub exitButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles exitButton.Click

@@ -20,3 +20,7 @@ C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\bi
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\bin\Debug\CafeOrder.xml
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.BillingForm.resources
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.Resources.resources
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\bin\Debug\CafeOrder.exe.config
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.exe
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.xml
+C:\Users\Hayley Jones\Desktop\Visual-Basic\Hayden\Webb_Assignment4\CafeOrder\CafeOrder\obj\x86\Debug\CafeOrder.pdb
