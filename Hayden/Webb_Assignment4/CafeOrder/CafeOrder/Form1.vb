@@ -67,6 +67,7 @@ Public Class BillingForm
 
                 'calc order total due
                 orderTotalDecimal = (subTotalDecimal + taxDecimal)
+
                 'enable clear for next item button and new order button
                 ClearButton.Enabled = True
                 newOrderButton.Enabled = True
@@ -113,7 +114,7 @@ Public Class BillingForm
 
             'when confirmed
             'call clear button
-            ClearButton.PerformClick()
+            Call ClearButton_Click(sender, e)
 
             'clear subtotal, tax, and order due
             TaxLabel.Text = ""
@@ -147,8 +148,8 @@ Public Class BillingForm
         Dim messageString As String
 
         'ensure last order is counted
-        If totalSalesDecimal <> 0 Then
-            newOrderButton.PerformClick()
+        If orderTotalDecimal <> 0 Then
+            Call newOrderButton_Click(sender, e)
         End If
 
         'when at least one order exist
@@ -158,13 +159,16 @@ Public Class BillingForm
             averageSaleDecimal = (totalSalesDecimal / numberOfOrdersInteger)
 
             'create summary output string
-            messageString = "number of orders: " & numberOfOrdersInteger.ToString("N") & Environment.NewLine & Environment.NewLine & averageSaleDecimal.ToString("C")
+            messageString = "Number of Orders: " & numberOfOrdersInteger.ToString("N") & Environment.NewLine & Environment.NewLine & "Total Sales: " &
+                totalSalesDecimal.ToString("C") & Environment.NewLine & Environment.NewLine & "Average Sales: " & averageSaleDecimal.ToString("C")
+            MessageBox.Show(messageString, "Coffee Sales Summary", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             'otherwise
         Else
 
             'pop up error message
             messageString = "No sales Data to summerize"
+            MessageBox.Show(messageString, "Coffee Sales Summary", MessageBoxButtons.OK, MessageBoxIcon.Information)
         End If
     End Sub
 
