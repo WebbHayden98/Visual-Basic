@@ -41,7 +41,7 @@ Partial Class mailOrderForm
         Me.printButton = New System.Windows.Forms.Button()
         Me.exitButton = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.ItemAmountTextBox = New System.Windows.Forms.TextBox()
+        Me.ItemAmountLabel = New System.Windows.Forms.Label()
         Me.WeightTextBox = New System.Windows.Forms.TextBox()
         Me.QuantityTextBox = New System.Windows.Forms.TextBox()
         Me.DescriptionTextBox = New System.Windows.Forms.TextBox()
@@ -90,6 +90,7 @@ Partial Class mailOrderForm
         'StateTextBox
         '
         Me.StateTextBox.Location = New System.Drawing.Point(88, 164)
+        Me.StateTextBox.MaxLength = 2
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(210, 21)
         Me.StateTextBox.TabIndex = 13
@@ -169,7 +170,6 @@ Partial Class mailOrderForm
         '
         'addItemButton
         '
-        Me.addItemButton.Enabled = False
         Me.addItemButton.Location = New System.Drawing.Point(531, 28)
         Me.addItemButton.Name = "addItemButton"
         Me.addItemButton.Size = New System.Drawing.Size(119, 32)
@@ -216,7 +216,7 @@ Partial Class mailOrderForm
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.ItemAmountTextBox)
+        Me.GroupBox2.Controls.Add(Me.ItemAmountLabel)
         Me.GroupBox2.Controls.Add(Me.WeightTextBox)
         Me.GroupBox2.Controls.Add(Me.QuantityTextBox)
         Me.GroupBox2.Controls.Add(Me.DescriptionTextBox)
@@ -233,12 +233,13 @@ Partial Class mailOrderForm
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Item Information"
         '
-        'ItemAmountTextBox
+        'ItemAmountLabel
         '
-        Me.ItemAmountTextBox.Location = New System.Drawing.Point(88, 151)
-        Me.ItemAmountTextBox.Name = "ItemAmountTextBox"
-        Me.ItemAmountTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.ItemAmountTextBox.TabIndex = 18
+        Me.ItemAmountLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.ItemAmountLabel.Location = New System.Drawing.Point(88, 151)
+        Me.ItemAmountLabel.Name = "ItemAmountLabel"
+        Me.ItemAmountLabel.Size = New System.Drawing.Size(210, 15)
+        Me.ItemAmountLabel.TabIndex = 23
         '
         'WeightTextBox
         '
@@ -485,7 +486,6 @@ Partial Class mailOrderForm
     Friend WithEvents StateTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ZipCodeTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CityTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents ItemAmountTextBox As System.Windows.Forms.TextBox
     Friend WithEvents WeightTextBox As System.Windows.Forms.TextBox
     Friend WithEvents QuantityTextBox As System.Windows.Forms.TextBox
     Friend WithEvents DescriptionTextBox As System.Windows.Forms.TextBox
@@ -495,5 +495,6 @@ Partial Class mailOrderForm
     Friend WithEvents SalesTaxLabel As System.Windows.Forms.Label
     Friend WithEvents ShippingHandlingLabel As System.Windows.Forms.Label
     Friend WithEvents PrintForm1 As Microsoft.VisualBasic.PowerPacks.Printing.PrintForm
+    Friend WithEvents ItemAmountLabel As System.Windows.Forms.Label
 
 End Class

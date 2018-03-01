@@ -7,15 +7,25 @@
 
 Public Class mailOrderForm
     'define constants here
-    Const SALES_TAX_RATE_DECIMAL
-    Const SHIPPING_HANDLING_RATE_DECIMAL
+    Const SALES_TAX_RATE_DECIMAL = 0.8
+    Const SHIPPING_HANDLING_RATE_DECIMAL = 0.25
 
     'define modular variables here
+    Private OrderAmountDueDeciaml As Decimal
+    Private ShippingHandlingDecimal As Decimal
+    Private OrderWeightDecimal As Decimal
+
     'NOTE: see psuedocode in addItemButton to help you determine what modular variables you need
     
     Private Sub addItemButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles addItemButton.Click
         'define local variables
         Dim goodDataBoolean As Boolean = True
+        Dim ItemAmountDeciaml As Decimal
+        Dim ItemPriceDecimal As Decimal
+        Dim ItemQuantityInteger As Integer
+        Dim ItemWeightDecimal As Decimal
+        Dim returnDialogResults As DialogResult
+        Dim messageString As String = "Do you wish to add additional items?"
 
         'Validate text fields--see powerpoint slides 33 from files/Lectures/chapter 4
         If NameTextBox.Text = "" Then
@@ -35,8 +45,8 @@ MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         Else
             Try
-                quantityInteger = Integer.Parse(QuantityTextBox.Text)
-                If quantityInteger <= 0 Then
+                ItemQuantityInteger = Integer.Parse(QuantityTextBox.Text)
+                If ItemQuantityInteger <= 0 Then
                     MessageBox.Show("Please enter a positive Quantity", "Data Missing",
                     MessageBoxButtons.OK, MessageBoxIcon.Error)
                     QuantityTextBox.Focus()
@@ -53,15 +63,38 @@ MessageBoxButtons.OK, MessageBoxIcon.Error)
                 goodDataBoolean = False
             End Try
         End If
+
         'When all data is valid
-        'calculate and display item amount 
-        'accumulate and display order amount due
-        'accumulate total order weight (needed in update summary to calculate shipping and handling)
-        'ask user if there are any more items for this order
-        '  when yes, clear output IN Item Information box ONLY and disable Add this Item button
-        '  otherwise, enable summary button
+        If goodDataBoolean = True Then
 
 
+            'calculate and display item amount
+            ItemAmountDeciaml = ItemQuantityInteger * ItemPriceDecimal
+            ItemAmountLabel.Text = ItemAmountDeciaml.ToString("C")
+
+            'accumulate and display order amount due
+            OrderAmountDueDeciaml += ItemAmountDeciaml
+            OrderAmountDueLabel.Text = OrderAmountDueDeciaml.ToString("C")
+
+            'accumulate total order weight (needed in update summary to calculate shipping and handling)
+            OrderWeightDecimal += ItemWeightDecimal
+
+            'ask user if there are any more items for this order
+            returnDialogResults = MessageBox.Show(messageString, "Item Check", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
+            If returnDialogResults = DialogResult.Yes Then
+
+                '  when yes, clear output IN Item Information box ONLY and disable Add this Item button
+                DescriptionTextBox.Text = ""
+                QuantityTextBox.Text = ""
+                WeightTextBox.Text = ""
+                PriceTextBox.Text = ""
+                ItemAmountLabel.Text = ""
+
+            Else
+                '  otherwise, enable summary button
+                updateSummaryButton.Enabled = True
+            End If
+        End If
     End Sub
 
     Private Sub clearCustomerButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clearCustomerButton.Click
