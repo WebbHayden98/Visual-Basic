@@ -1,13 +1,13 @@
 ﻿'Program Name:  MailOrder
-'Programmer:
-'Date:
+'Programmer:    Hayden Webb
+'Date:          3/6/18
 'Description:   This project validates customer information and item information.
 '               It then calculates the price of each item ordered and the total order value,
 '               the shipping charge, tax due for CA orders, and total amount due.
 
 Public Class mailOrderForm
     'define constants here
-    Const SALES_TAX_RATE_DECIMAL = 0.8
+    Const SALES_TAX_RATE_DECIMAL = 0.08
     Const SHIPPING_HANDLING_RATE_DECIMAL = 0.25
 
     'define modular variables here
@@ -164,7 +164,7 @@ Public Class mailOrderForm
             OrderAmountDueLabel.Text = OrderAmountDueDeciaml.ToString("C")
 
             'accumulate total order weight (needed in update summary to calculate shipping and handling)
-            OrderWeightDecimal += ItemWeightDecimal
+            OrderWeightDecimal += (ItemWeightDecimal * ItemQuantityInteger)
 
             'ask user if there are any more items for this order
             returnDialogResults = MessageBox.Show(messageString, "Item Check", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
@@ -179,6 +179,7 @@ Public Class mailOrderForm
 
             Else
                 '  otherwise, enable summary button
+                addItemButton.Enabled = False
                 updateSummaryButton.Enabled = True
             End If
 
@@ -200,6 +201,7 @@ Public Class mailOrderForm
         ShippingHandlingLabel.Text = ""
         SalesTaxLabel.Text = ""
         TotalAmountDueLabel.Text = ""
+        ItemAmountLabel.Text = ""
         OrderAmountDueDeciaml = 0
         OrderWeightDecimal = 0
 
@@ -213,12 +215,33 @@ Public Class mailOrderForm
     Private Sub updateSummaryButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles updateSummaryButton.Click
         'define local variables
         Dim ShippingHandlingDecimal As Decimal
+        Dim SalesTaxDecimal As Decimal
 
         'when order going to California, calculate tax on order amout due
-        'calculate shipping charge of 25 cents per pound
-        'add one of three handing charges based on weight
-        'display formatted values of shipping and handline, sales tax, and total amount due
+        If StateTextBox.Text = "CA" Then
+            SalesTaxDecimal = OrderAmountDueDeciaml * SALES_TAX_RATE_DECIMAL
+            OrderAmountDueDeciaml += SalesTaxDecimal
+        Else
+            SalesTaxDecimal = 0
+        End If
 
+        'calculate shipping charge of 25 cents per pound
+        ShippingHandlingDecimal = OrderWeightDecimal * SHIPPING_HANDLING_RATE_DECIMAL
+
+        'add one of three handing charges based on weight
+        If OrderWeightDecimal < 15 Then
+            ShippingHandlingDecimal += 10
+        ElseIf OrderWeightDecimal >= 15 And OrderWeightDecimal < 45 Then
+            ShippingHandlingDecimal += 15
+        ElseIf OrderWeightDecimal >= 45 Then
+            ShippingHandlingDecimal += 30
+        End If
+        OrderAmountDueDeciaml += ShippingHandlingDecimal
+
+        'display formatted values of shipping and handline, sales tax, and total amount due
+        TotalAmountDueLabel.Text = OrderAmountDueDeciaml.ToString("C")
+        ShippingHandlingLabel.Text = ShippingHandlingDecimal.ToString("C")
+        SalesTaxLabel.Text = SalesTaxDecimal.ToString("C")
 
 
     End Sub

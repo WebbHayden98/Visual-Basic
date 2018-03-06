@@ -89,39 +89,40 @@ Partial Class mailOrderForm
         '
         'StateTextBox
         '
+        Me.StateTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.StateTextBox.Location = New System.Drawing.Point(88, 164)
         Me.StateTextBox.MaxLength = 2
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.StateTextBox.TabIndex = 13
+        Me.StateTextBox.TabIndex = 3
         '
         'ZipCodeTextBox
         '
         Me.ZipCodeTextBox.Location = New System.Drawing.Point(88, 202)
         Me.ZipCodeTextBox.Name = "ZipCodeTextBox"
         Me.ZipCodeTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.ZipCodeTextBox.TabIndex = 12
+        Me.ZipCodeTextBox.TabIndex = 4
         '
         'CityTextBox
         '
         Me.CityTextBox.Location = New System.Drawing.Point(88, 122)
         Me.CityTextBox.Name = "CityTextBox"
         Me.CityTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.CityTextBox.TabIndex = 11
+        Me.CityTextBox.TabIndex = 2
         '
         'AddressTextBox
         '
         Me.AddressTextBox.Location = New System.Drawing.Point(88, 81)
         Me.AddressTextBox.Name = "AddressTextBox"
         Me.AddressTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.AddressTextBox.TabIndex = 10
+        Me.AddressTextBox.TabIndex = 1
         '
         'NameTextBox
         '
         Me.NameTextBox.Location = New System.Drawing.Point(88, 39)
         Me.NameTextBox.Name = "NameTextBox"
         Me.NameTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.NameTextBox.TabIndex = 5
+        Me.NameTextBox.TabIndex = 0
         '
         'Label5
         '
@@ -173,7 +174,7 @@ Partial Class mailOrderForm
         Me.addItemButton.Location = New System.Drawing.Point(531, 28)
         Me.addItemButton.Name = "addItemButton"
         Me.addItemButton.Size = New System.Drawing.Size(119, 32)
-        Me.addItemButton.TabIndex = 1
+        Me.addItemButton.TabIndex = 9
         Me.addItemButton.Text = "&Add This Item"
         Me.addItemButton.UseVisualStyleBackColor = True
         '
@@ -183,7 +184,7 @@ Partial Class mailOrderForm
         Me.updateSummaryButton.Location = New System.Drawing.Point(531, 77)
         Me.updateSummaryButton.Name = "updateSummaryButton"
         Me.updateSummaryButton.Size = New System.Drawing.Size(119, 32)
-        Me.updateSummaryButton.TabIndex = 2
+        Me.updateSummaryButton.TabIndex = 10
         Me.updateSummaryButton.Text = "&Update Summary"
         Me.updateSummaryButton.UseVisualStyleBackColor = True
         '
@@ -192,7 +193,7 @@ Partial Class mailOrderForm
         Me.clearCustomerButton.Location = New System.Drawing.Point(531, 127)
         Me.clearCustomerButton.Name = "clearCustomerButton"
         Me.clearCustomerButton.Size = New System.Drawing.Size(119, 32)
-        Me.clearCustomerButton.TabIndex = 3
+        Me.clearCustomerButton.TabIndex = 11
         Me.clearCustomerButton.Text = "&Clear Customer"
         Me.clearCustomerButton.UseVisualStyleBackColor = True
         '
@@ -201,7 +202,7 @@ Partial Class mailOrderForm
         Me.printButton.Location = New System.Drawing.Point(531, 250)
         Me.printButton.Name = "printButton"
         Me.printButton.Size = New System.Drawing.Size(119, 27)
-        Me.printButton.TabIndex = 4
+        Me.printButton.TabIndex = 12
         Me.printButton.Text = "&Print"
         Me.printButton.UseVisualStyleBackColor = True
         '
@@ -210,7 +211,7 @@ Partial Class mailOrderForm
         Me.exitButton.Location = New System.Drawing.Point(531, 284)
         Me.exitButton.Name = "exitButton"
         Me.exitButton.Size = New System.Drawing.Size(119, 27)
-        Me.exitButton.TabIndex = 5
+        Me.exitButton.TabIndex = 13
         Me.exitButton.Text = "E&xit"
         Me.exitButton.UseVisualStyleBackColor = True
         '
@@ -246,28 +247,28 @@ Partial Class mailOrderForm
         Me.WeightTextBox.Location = New System.Drawing.Point(88, 91)
         Me.WeightTextBox.Name = "WeightTextBox"
         Me.WeightTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.WeightTextBox.TabIndex = 17
+        Me.WeightTextBox.TabIndex = 7
         '
         'QuantityTextBox
         '
         Me.QuantityTextBox.Location = New System.Drawing.Point(88, 61)
         Me.QuantityTextBox.Name = "QuantityTextBox"
         Me.QuantityTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.QuantityTextBox.TabIndex = 16
+        Me.QuantityTextBox.TabIndex = 6
         '
         'DescriptionTextBox
         '
         Me.DescriptionTextBox.Location = New System.Drawing.Point(88, 31)
         Me.DescriptionTextBox.Name = "DescriptionTextBox"
         Me.DescriptionTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.DescriptionTextBox.TabIndex = 15
+        Me.DescriptionTextBox.TabIndex = 5
         '
         'PriceTextBox
         '
         Me.PriceTextBox.Location = New System.Drawing.Point(88, 121)
         Me.PriceTextBox.Name = "PriceTextBox"
         Me.PriceTextBox.Size = New System.Drawing.Size(210, 21)
-        Me.PriceTextBox.TabIndex = 14
+        Me.PriceTextBox.TabIndex = 8
         '
         'Label10
         '
