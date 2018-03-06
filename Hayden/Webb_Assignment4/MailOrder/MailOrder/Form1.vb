@@ -12,7 +12,6 @@ Public Class mailOrderForm
 
     'define modular variables here
     Private OrderAmountDueDeciaml As Decimal
-    Private ShippingHandlingDecimal As Decimal
     Private OrderWeightDecimal As Decimal
 
     'NOTE: see psuedocode in addItemButton to help you determine what modular variables you need
@@ -25,39 +24,128 @@ Public Class mailOrderForm
         Dim ItemQuantityInteger As Integer
         Dim ItemWeightDecimal As Decimal
         Dim returnDialogResults As DialogResult
+        Dim ZipInteger As Integer
         Dim messageString As String = "Do you wish to add additional items?"
 
         'Validate text fields--see powerpoint slides 33 from files/Lectures/chapter 4
         If NameTextBox.Text = "" Then
-            MessageBox.Show("Please enter a customer name", "Data Missing",
-MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Please enter a customer name", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
             NameTextBox.Focus()
             NameTextBox.SelectAll()
             goodDataBoolean = False
 
-            'Validate numeric fields--see powerpoint slides 33 from files/Lectures/chapter 4
+            'continue checking each text box that will contain characters using elseIfs
         ElseIf DescriptionTextBox.Text = "" Then
-            MessageBox.Show("Please enter a description", "Data Missing",
-MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Please enter a description", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
             DescriptionTextBox.Focus()
             DescriptionTextBox.SelectAll()
             goodDataBoolean = False
 
+        ElseIf AddressTextBox.Text = "" Then
+            MessageBox.Show("Please enter an Address", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            AddressTextBox.Focus()
+            AddressTextBox.SelectAll()
+            goodDataBoolean = False
+
+        ElseIf CityTextBox.Text = "" Then
+            MessageBox.Show("Please enter a City", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            CityTextBox.Focus()
+            CityTextBox.SelectAll()
+            goodDataBoolean = False
+
+        ElseIf StateTextBox.Text = "" Then
+            MessageBox.Show("Please enter a state", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            StateTextBox.Focus()
+            StateTextBox.SelectAll()
+            goodDataBoolean = False
+
+            'all text boxes containing non-numeric characters have been tested
+            'Validate numeric fields--see powerpoint slides 33 from files/Lectures/chapter 4
         Else
             Try
+                'convert quanity to numeric
                 ItemQuantityInteger = Integer.Parse(QuantityTextBox.Text)
+
+                'when quanity not positive
                 If ItemQuantityInteger <= 0 Then
-                    MessageBox.Show("Please enter a positive Quantity", "Data Missing",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+                    'pop up err msg
+                    MessageBox.Show("Please enter a positive Quantity", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     QuantityTextBox.Focus()
                     QuantityTextBox.SelectAll()
                     goodDataBoolean = False
+
                 Else
-                    'nest all try-catches for each number that must be numeric and greater than zero
+
+                    'nest all try-catches for each number that must be  numeric and greater than zero
+                    Try
+                        'convert price to numeric
+                        ItemPriceDecimal = Decimal.Parse(PriceTextBox.Text)
+
+                        'when price not positive
+                        If ItemPriceDecimal <= 0 Then
+
+                            'pop up err msg
+                            MessageBox.Show("Please enter a positive Price", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            PriceTextBox.Focus()
+                            PriceTextBox.SelectAll()
+                            goodDataBoolean = False
+                        Else
+                            Try
+
+                                'convert weight to numeric
+                                ItemWeightDecimal = Integer.Parse(WeightTextBox.Text)
+
+                                'when weight not positive
+                                If ItemWeightDecimal <= 0 Then
+
+                                    'pop up err msg
+                                    MessageBox.Show("Please enter a positive weight", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                    WeightTextBox.Focus()
+                                    WeightTextBox.SelectAll()
+                                    goodDataBoolean = False
+                                Else
+                                    Try
+
+                                        'convert Zip code to numeric
+                                        ZipInteger = Integer.Parse(ZipCodeTextBox.Text)
+
+                                        'when zip not positive
+                                        If ZipInteger <= 0 Then
+
+                                            'pop up err msg
+                                            MessageBox.Show("Please enter a valid zip code", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                            ZipCodeTextBox.Focus()
+                                            ZipCodeTextBox.SelectAll()
+                                            goodDataBoolean = False
+                                        End If
+
+                                    Catch ZipEx As FormatException
+                                        MessageBox.Show("Quantity must be a valid zip code.", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                        ZipCodeTextBox.Focus()
+                                        ZipCodeTextBox.SelectAll()
+                                        goodDataBoolean = False
+                                    End Try
+                                End If
+
+                            Catch WeightEx As FormatException
+                                MessageBox.Show("Quantity must be a whole number.", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                WeightTextBox.Focus()
+                                WeightTextBox.SelectAll()
+                                goodDataBoolean = False
+                            End Try
+                        End If
+
+                    Catch PriceEx As FormatException
+                        MessageBox.Show("Price must be a whole number.", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        PriceTextBox.Focus()
+                        PriceTextBox.SelectAll()
+                        goodDataBoolean = False
+                    End Try
                 End If
-            Catch quantityErr As FormatException
-                MessageBox.Show("Quantity must be a whole number.", "Data Missing",
-                MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            Catch QuantityEx As FormatException
+                MessageBox.Show("Quantity must be a whole number.", "Data Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 QuantityTextBox.Focus()
                 QuantityTextBox.SelectAll()
                 goodDataBoolean = False
@@ -66,7 +154,6 @@ MessageBoxButtons.OK, MessageBoxIcon.Error)
 
         'When all data is valid
         If goodDataBoolean = True Then
-
 
             'calculate and display item amount
             ItemAmountDeciaml = ItemQuantityInteger * ItemPriceDecimal
@@ -94,6 +181,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error)
                 '  otherwise, enable summary button
                 updateSummaryButton.Enabled = True
             End If
+
         End If
     End Sub
 
@@ -112,6 +200,8 @@ MessageBoxButtons.OK, MessageBoxIcon.Error)
         ShippingHandlingLabel.Text = ""
         SalesTaxLabel.Text = ""
         TotalAmountDueLabel.Text = ""
+        OrderAmountDueDeciaml = 0
+        OrderWeightDecimal = 0
 
         'disable Update Summary button
         updateSummaryButton.Enabled = False
@@ -122,6 +212,7 @@ MessageBoxButtons.OK, MessageBoxIcon.Error)
 
     Private Sub updateSummaryButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles updateSummaryButton.Click
         'define local variables
+        Dim ShippingHandlingDecimal As Decimal
 
         'when order going to California, calculate tax on order amout due
         'calculate shipping charge of 25 cents per pound
