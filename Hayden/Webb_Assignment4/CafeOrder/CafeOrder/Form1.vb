@@ -1,6 +1,6 @@
 ﻿'Program Name:  Ch04 HandsOn
-'Programmer:
-'Date:
+'Programmer:    Hayden Webb 
+'Date:          
 'Description:   This project calculates the amount due based on the customer
 '               selection and accumulates summary data for the day.
 Public Class BillingForm
