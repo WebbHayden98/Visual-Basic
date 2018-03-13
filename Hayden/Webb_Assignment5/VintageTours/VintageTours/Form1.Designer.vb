@@ -58,9 +58,11 @@ Partial Class payrollForm
         Me.LogoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.FontDialog1 = New System.Windows.Forms.FontDialog()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.CalcPayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClearFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CalcPayToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearFormToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.logoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.payChkGroupBox.SuspendLayout()
@@ -288,13 +290,13 @@ Partial Class payrollForm
         'SummaryToolStripMenuItem
         '
         Me.SummaryToolStripMenuItem.Name = "SummaryToolStripMenuItem"
-        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.SummaryToolStripMenuItem.Text = "&Summary"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(125, 22)
         Me.ExitToolStripMenuItem.Text = "E&xit"
         '
         'PayrollToolStripMenuItem
@@ -326,26 +328,26 @@ Partial Class payrollForm
         'FontToolStripMenuItem
         '
         Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
-        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.FontToolStripMenuItem.Text = "&Font"
         '
         'ColorToolStripMenuItem
         '
         Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.ColorToolStripMenuItem.Text = "&Color"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(100, 6)
         '
         'LogoToolStripMenuItem
         '
         Me.LogoToolStripMenuItem.Checked = True
         Me.LogoToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
         Me.LogoToolStripMenuItem.Name = "LogoToolStripMenuItem"
-        Me.LogoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LogoToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.LogoToolStripMenuItem.Text = "&Logo"
         '
         'HelpToolStripMenuItem
@@ -363,27 +365,28 @@ Partial Class payrollForm
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalcPayToolStripMenuItem, Me.ClearFormToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CalcPayToolStripMenuItem1, Me.ClearFormToolStripMenuItem1})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(133, 48)
         '
-        'CalcPayToolStripMenuItem
+        'CalcPayToolStripMenuItem1
         '
-        Me.CalcPayToolStripMenuItem.Name = "CalcPayToolStripMenuItem"
-        Me.CalcPayToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
-        Me.CalcPayToolStripMenuItem.Text = "&Calc Pay"
+        Me.CalcPayToolStripMenuItem1.Name = "CalcPayToolStripMenuItem1"
+        Me.CalcPayToolStripMenuItem1.Size = New System.Drawing.Size(132, 22)
+        Me.CalcPayToolStripMenuItem1.Text = "&Calc Pay"
         '
-        'ClearFormToolStripMenuItem
+        'ClearFormToolStripMenuItem1
         '
-        Me.ClearFormToolStripMenuItem.Name = "ClearFormToolStripMenuItem"
-        Me.ClearFormToolStripMenuItem.Size = New System.Drawing.Size(132, 22)
-        Me.ClearFormToolStripMenuItem.Text = "C&lear Form"
+        Me.ClearFormToolStripMenuItem1.Name = "ClearFormToolStripMenuItem1"
+        Me.ClearFormToolStripMenuItem1.Size = New System.Drawing.Size(132, 22)
+        Me.ClearFormToolStripMenuItem1.Text = "C&lear Form"
         '
         'payrollForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(633, 510)
+        Me.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.payChkGroupBox)
         Me.Controls.Add(Me.GroupBox1)
@@ -440,8 +443,10 @@ Partial Class payrollForm
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents LogoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ColorDialog1 As System.Windows.Forms.ColorDialog
+    Friend WithEvents FontDialog1 As System.Windows.Forms.FontDialog
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
-    Friend WithEvents CalcPayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ClearFormToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CalcPayToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ClearFormToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 
 End Class
