@@ -41,6 +41,10 @@ Public Class payrollForm
     End Sub
 
     Private Sub SummaryToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles SummaryToolStripMenuItem.Click
+        If totalPayAllEmployees <> 1 Then
+            CalcPayToolStripMenuItem1.PerformClick()
+        End If
+
         Dim messagestring As String
 
         messagestring = "Total Sales: " & totalSalesInteger.ToString("N") & Environment.NewLine & Environment.NewLine & "Total Base Pay: " &
@@ -55,6 +59,9 @@ Public Class payrollForm
         Dim dollarValueSalesDecimal As Decimal
         Dim hoursWorkedDeciaml As Decimal
         Dim payRateDecimal As Decimal
+        Dim basePayDecimal As Decimal
+        Dim commissionDecimal As Decimal
+        Dim employeePayDecimal As Decimal
 
         'Validate non-numeric text fields
         If nameTextBox.Text = "" Then
@@ -108,8 +115,61 @@ Public Class payrollForm
                             End Try
                         End If
 
-                        'Validate numeric text fields
+                    Catch hoursworkedex As FormatException
+                        MessageBox.Show("Quantity must be a valid work hour.", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        payRateTextBox.Focus()
+                        payRateTextBox.SelectAll()
+                        goodDataBoolean = False
+                    End Try
+                End If
+
+            Catch dollarvaluesalesex As FormatException
+                MessageBox.Show("Quantity must be a valid sales value.", "Data Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                payRateTextBox.Focus()
+                payRateTextBox.SelectAll()
+                goodDataBoolean = False
+            End Try
+        End If
+
+        If goodDataBoolean = True Then
+            basePayDecimal = FindBasePay(payRateDecimal, hoursWorkedDeciaml)
+            commissionDecimal = FindCommission(dollarValueSalesDecimal)
+            employeePayDecimal = basePayDecimal + commissionDecimal
+
+            totalBasePayDecimal += basePayDecimal
+            totalCommissionsDecimal += commissionDecimal
+            totalPayAllEmployees += employeePayDecimal
+            totalSalesInteger += 1
+
+            basePayLabel.Text = basePayDecimal.ToString("C")
+            If commissionDecimal > 0 Then
+                commissionLabel.Text = commissionDecimal.ToString("C")
+            End If
+            employeePayLabel.Text = employeePayDecimal.ToString("C")
+
+        End If
+
     End Sub
+    Private Function FindBasePay(payrate As Decimal, hoursworked As Decimal) As Decimal
+        If (hoursworked > 40) Then
+            Return ((payrate * hoursworked) + (((hoursworked - 40) * 1.5) * payrate))
+        Else
+            Return payrate * hoursworked
+        End If
+    End Function
+
+    Private Function FindCommission(sales As Decimal) As Decimal
+        If (sales >= 500) Then
+            If permanentEmployeeRadioButton.Checked = True Then
+                Return sales * 0.05
+            Else
+                Return sales * 0.035
+            End If
+        Else
+            Return 0
+        End If
+
+    End Function
 
     Private Sub ClearPayToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ClearPayToolStripMenuItem.Click, ClearFormToolStripMenuItem1.Click
         Dim messagestring As String = "Clear this form?"
