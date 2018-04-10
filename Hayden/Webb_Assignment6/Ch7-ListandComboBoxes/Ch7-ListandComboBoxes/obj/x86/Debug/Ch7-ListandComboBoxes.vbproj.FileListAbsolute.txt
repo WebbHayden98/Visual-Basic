@@ -17,3 +17,6 @@ C:\Users\LAB\Desktop\Visual-Basic\Hayden\Ch7-ListandComboBoxes\Ch7-ListandComboB
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Ch7-ListandComboBoxes\Ch7-ListandComboBoxes\bin\Debug\Ch7-ListandComboBoxes.xml
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Ch7-ListandComboBoxes\Ch7-ListandComboBoxes\obj\x86\Debug\Chapter7_ListandComboBoxes.listForm.resources
 C:\Users\LAB\Desktop\Visual-Basic\Hayden\Ch7-ListandComboBoxes\Ch7-ListandComboBoxes\obj\x86\Debug\Chapter7_ListandComboBoxes.Resources.resources
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment6\Ch7-ListandComboBoxes\Ch7-ListandComboBoxes\obj\x86\Debug\Ch7-ListandComboBoxes.exe
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment6\Ch7-ListandComboBoxes\Ch7-ListandComboBoxes\obj\x86\Debug\Ch7-ListandComboBoxes.xml
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment6\Ch7-ListandComboBoxes\Ch7-ListandComboBoxes\obj\x86\Debug\Ch7-ListandComboBoxes.pdb
