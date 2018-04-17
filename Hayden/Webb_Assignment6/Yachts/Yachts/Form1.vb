@@ -79,12 +79,82 @@
     End Sub
 
     Private Sub OkButton_Click(sender As System.Object, e As System.EventArgs) Handles OkButton.Click
-        'Validate Input
-        'When data good
-        'determine size for rate
-        'calculate cost
-        'display price
-        'Accumulate modular data
+        Dim sizeInt As Integer
+        Dim HourDec As Decimal
+        Dim HourlyRateDEC As Decimal
+        Dim totalPriceDec As Decimal
+        Dim goodData As Boolean = True
+
+        'validate
+        If ResponsiblePartyTextBox.Text = "" Then
+            MessageBox.Show("Please enter a responsible party")
+            goodData = False
+            With txtParty
+                .SelectAll()
+                .Focus()
+            End With
+        Else
+            If (listSize.SelectedItem = False) Then
+                goodData = False
+                MessageBox.Show("Please choose a size")
+                With listSize
+                    .Focus()
+                End With
+            Else
+                sizeInt = listSize.SelectedItem
+                Try
+                    HourDec = Decimal.Parse(txtHours.Text)
+                    If (HourDec <= 0) Then
+                        MessageBox.Show("Please enter a valid amount of time")
+                        goodData = False
+                        With txtHours
+                            .SelectAll()
+                            .Focus()
+                        End With
+                    Else
+                        If CBXYachtType.SelectedItem = "" Then
+                            MessageBox.Show("Please choose a yachat type")
+                            CBXYachtType.Focus()
+                            goodData = False
+                        End If
+                    End If
+                Catch ex As Exception
+                    MessageBox.Show("hours must be numeric: ", "Data Entry Error ",
+                                MessageBoxButtons.OK, MessageBoxIcon.Exclamation
+                                )
+                    With txtHours
+                        .SelectAll()
+                        .Focus()
+                    End With
+                End Try
+            End If
+        End If
+        'when data is good
+        'determine size to find hourly rate
+        If (sizeInt = 22) Then
+            HourlyRateDEC = 95
+        ElseIf (sizeInt = 24) Then
+            HourlyRateDEC = 137
+        ElseIf (sizeInt = 30) Then
+            HourlyRateDEC = 160
+        ElseIf (sizeInt = 32) Then
+            HourlyRateDEC = 192
+        ElseIf (sizeInt = 36) Then
+            HourlyRateDEC = 250
+        ElseIf (sizeInt = 38) Then
+            HourlyRateDEC = 400
+        ElseIf (sizeInt = 45) Then
+            HourlyRateDEC = 550
+        Else
+            MessageBox.Show("invalid size")
+        End If
+        ' calculate price
+        totalPriceDec = HourlyRateDEC * HourDec
+        'display formatted price
+        lblPrice.Text = "Your total price is " + totalPriceDec.ToString("C")
+        'accumulate modular data
+        TotalHoursDec += HourDec
+        TotalRevenueDec += TotalRevenueDec
     End Sub
 
     Private Sub AddYachtTypeToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles AddYachtTypeToolStripMenuItem.Click
@@ -112,12 +182,16 @@
 
     Private Sub RemoveYachtTypeToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles RemoveYachtTypeToolStripMenuItem.Click
         With YachtTypeComboBox
-
+            .Items.Remove(YachtTypeComboBox.Text)
         End With
     End Sub
 
-    Private Sub DisplayCountOfYachtTypesToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles DisplayCountOfYachtTypesToolStripMenuItem.Click
-
+    Private Sub DisplayCountOfYachtTypesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DisplayCountOfYachtTypesToolStripMenuItem.Click
+        Dim itemCountInteger As Integer
+        Dim MessageTextString As String
+        itemCountInteger = YachtTypeComboBox.Items.Count
+        MessageTextString = "Yacht type count: " & itemCountInteger
+        MessageBox.Show(MessageTextString, "About", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles ExitToolStripMenuItem.Click
