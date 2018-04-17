@@ -231,24 +231,23 @@
         Dim MessageTextString As String
         Dim returnDialogResult As DialogResult
         If CalcualtedBoolean Then
-            ResponsiblePartyTextBox.Text = ""
-            HoursCharteredTextBox.Text = ""
-            CharterPriceLabel.Text = ""
-            YachtTypeComboBox.SelectedIndex = -1
-            YachtSizeListBox.SelectedIndex = -1
+            ClearForm()
             CalcualtedBoolean = False
         Else
             MessageTextString = "You have not calculated, are you sure you wish to clear the form?"
             returnDialogResult = MessageBox.Show(MessageTextString, "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Hand)
             If returnDialogResult = DialogResult.Yes Then
-                ResponsiblePartyTextBox.Text = ""
-                HoursCharteredTextBox.Text = ""
-                CharterPriceLabel.Text = ""
-                YachtTypeComboBox.SelectedIndex = -1
-                YachtSizeListBox.SelectedIndex = -1
+                ClearForm()
             Else
                 OkButton.PerformClick()
             End If
         End If
+    End Sub
+    Private Sub ClearForm()
+        ResponsiblePartyTextBox.Text = ""
+        HoursCharteredTextBox.Text = ""
+        CharterPriceLabel.Text = ""
+        YachtTypeComboBox.SelectedIndex = -1
+        YachtSizeListBox.SelectedIndex = -1
     End Sub
 End Class
