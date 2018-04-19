@@ -1,4 +1,9 @@
-﻿Public Class Form1
+﻿''Name:         Hayden Webb
+''Date:         4/19/18
+''Program:      Yacht
+''Description:  Create a program that allows a user to charter a yacht
+
+Public Class Form1
     Private NumberOfChartersInteger As Integer
     Private TotalRevenueDecimal As Decimal
     Private TotalHoursCharteredDecimal As Decimal
@@ -81,7 +86,7 @@
 
             Next
         End With
-  
+
     End Sub
 
     Private Sub PrintToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles PrintToolStripMenuItem.Click

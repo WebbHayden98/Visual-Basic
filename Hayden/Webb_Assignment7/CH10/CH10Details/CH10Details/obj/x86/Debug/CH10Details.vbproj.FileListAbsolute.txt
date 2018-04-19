@@ -1,0 +1,10 @@
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\bin\Debug\RnrBooks(1).mdb
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\bin\Debug\CH10Details.exe.config
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\bin\Debug\CH10Details.exe
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\bin\Debug\CH10Details.pdb
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\bin\Debug\CH10Details.xml
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\obj\x86\Debug\WindowsApplication1.detailsForm.resources
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\obj\x86\Debug\CH10Details.exe
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\obj\x86\Debug\CH10Details.xml
+C:\Users\LAB\Desktop\Visual-Basic\Hayden\Webb_Assignment7\CH10\CH10Details\CH10Details\obj\x86\Debug\CH10Details.pdb
