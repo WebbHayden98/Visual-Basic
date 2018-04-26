@@ -2,17 +2,18 @@
 Public Class Form1
 
     Private Sub numSquaredButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles numSquaredButton.Click
-        'single for next loop
-        Dim loopIndex As Integer
         Dim square As Integer
-        outputListBox.Items.Clear()
-        outputListBox.Items.Add("Number     Square")
-        For loopIndex = 0 To 100 Step 5
-            square = loopIndex ^ 2
-            outputListBox.Items.Add(loopIndex.ToString("D3") &
-                                    "            " &
-(square.ToString("D5")))
-        Next
+        Dim ItemIndex As Integer
+
+
+        With outputListBox
+            .Items.Clear()
+            .Items.Add("Number     Square")
+            For ItemIndex = 0 To 100 Step 5
+                square = ItemIndex ^ 2
+                .Items.Add(ItemIndex.ToString("D3") & "            " & square.ToString("D5"))
+            Next
+        End With
     End Sub
 
     Private Sub upperLeftButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles upperLeftButton.Click
